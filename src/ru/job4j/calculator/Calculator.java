@@ -17,6 +17,10 @@ package ru.job4j.calculator;
         System.out.println(sixDivTwo);
         System.out.println(fiveMinusTwo);
         System.out.println(fourTimeTwo);
+        int size =10;
+        size = size + 100;
+        int sizeMinusFive = size-5;
+            System.out.println(sizeMinusFive);
 
     }
 }
