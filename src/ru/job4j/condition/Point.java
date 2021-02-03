@@ -1,3 +1,5 @@
+import static java.lang.Math;
+
 package ru.job4j.condition;
 
 public class Point {
