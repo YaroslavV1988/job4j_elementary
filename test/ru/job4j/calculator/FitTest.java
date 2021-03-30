@@ -1,29 +1,31 @@
-package ru.job4j.calculator;
+ppackage ru.job4j.calculator;
 
-import org.junit.Test;
-
-import static org.junit.Assert.*;
-import org.junit.Assert;
-import org.junit.Test;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class FitTest {
 
     @Test
-    public void whenManWeightIs187() {
-        int in = 187;
-        int expected = 100;
-        int out = (int) Fit.manWeight((short) in);
+    public void whenMan180Then92() {
+        short in = 180;
+        double expected = 92;
+        double out = Fit.manWeight(in);
         Assert.assertEquals(expected, out, 0.01);
-
     }
 
     @Test
-    public void whenWomanWeightIs165() {
-        int in = 165;
-        int expected = 63;
-        int out = (int) Fit.womanWeight((short) in);
+    public void whenMan170Then80() {
+        short in = 170;
+        double expected = 80.5;
+        double out = Fit.manWeight(in);
+        Assert.assertEquals(expected, out, 0.01);
+    }
+
+    @Test
+    public void whenWoman171Then70() {
+        short in = 171;
+        double expected = 70.14;
+        double out = Fit.womanWeight(in);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
